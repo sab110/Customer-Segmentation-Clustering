@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the use of the **K-Means Clustering** algorithm for customer segmentation. By grouping customers based on their purchasing behavior and demographics, businesses can develop targeted marketing strategies and improve customer experiences.
+This project demonstrates the use of the **K-Means Clustering** algorithm for customer segmentation. By grouping customers based on their purchasing behavior and demographics, businesses can develop targeted marketing strategies and improve customer experiences. The implementation is done using a Jupyter Notebook for ease of exploration and visualization.
 
 ---
 
@@ -22,12 +22,12 @@ This project demonstrates the use of the **K-Means Clustering** algorithm for cu
 The dataset is available on [Kaggle](https://www.kaggle.com/datasets/sonalisingh1411/mallcustomersdataset?resource=download).
 
 ### **Features**
-| Feature              | Description                                   | Type        |
-|----------------------|-----------------------------------------------|-------------|
-| **CustomerID**       | Unique identifier for each customer           | Categorical |
-| **Age**              | Age of the customer                          | Numeric     |
-| **Annual Income (k$)** | Annual income of the customer in $1000       | Numeric     |
-| **Spending Score (1-100)** | Spending score assigned to the customer | Numeric     |
+| Feature                 | Description                                   | Type        |
+|-------------------------|-----------------------------------------------|-------------|
+| **CustomerID**          | Unique identifier for each customer           | Categorical |
+| **Age**                 | Age of the customer                          | Numeric     |
+| **Annual Income (k$)**  | Annual income of the customer in $1000        | Numeric     |
+| **Spending Score (1-100)** | Spending score assigned to the customer   | Numeric     |
 
 ### **Target**
 Since this is an **unsupervised learning** task, there is no explicit target variable.
@@ -37,8 +37,8 @@ Since this is an **unsupervised learning** task, there is no explicit target var
 ## Methodology
 
 ### **1. Data Exploration**
-- Explore the dataset to understand feature distributions and relationships.
-- Visualize pairwise relationships to identify potential clusters.
+- Load and inspect the dataset to understand its structure.
+- Visualize feature distributions and pairwise relationships to identify potential clusters.
 
 ### **2. Data Preprocessing**
 - Drop irrelevant columns (e.g., `CustomerID`).
@@ -47,7 +47,7 @@ Since this is an **unsupervised learning** task, there is no explicit target var
 ### **3. Clustering with K-Means**
 - Determine the optimal number of clusters using the **Elbow Method**.
 - Apply **K-Means Clustering** with the optimal number of clusters.
-- Add cluster labels to the original dataset for interpretation.
+- Add cluster labels to the dataset for interpretation.
 
 ### **4. Visualizing Clusters**
 - Use 2D scatter plots to visualize clusters (e.g., Spending Score vs. Annual Income).
@@ -76,29 +76,54 @@ Since this is an **unsupervised learning** task, there is no explicit target var
 
 - **Programming Language**: Python
 - **Libraries**:
-  - `pandas` and `numpy` for data manipulation.
-  - `matplotlib` and `seaborn` for data visualization.
-  - `sklearn` for K-Means Clustering and evaluation.
+  - `pandas` and `numpy`: For data manipulation.
+  - `matplotlib` and `seaborn`: For data visualization.
+  - `scikit-learn`: For K-Means Clustering and evaluation.
 
 ---
 
 ## How to Run
 
-1. Clone the repository and navigate to the project directory:
-   ```bash
-   git clone <repository-url>
-   cd <project-directory>
-   ```
+### Step 1: Clone the Repository
+Clone the repository to your local machine:
+```bash
+git clone <repository-url>
+cd Customer-Segmentation-Clustering
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```
 
-3. Run the script or notebook:
-   ```bash
-   python customer_segmentation.py
-   ```
+### Step 2: Install Dependencies
+Install the required Python libraries using the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Open the Jupyter Notebook
+Launch Jupyter Notebook to interact with the code:
+```bash
+jupyter notebook "Customer Segmentation.ipynb"
+```
+
+### Step 4: Explore the Results
+Run the notebook cell by cell to:
+- Explore the dataset.
+- Perform clustering and visualize the results.
+- Evaluate cluster quality and interpret the findings.
+
+---
+
+## Repository Structure
+
+```
+project-directory/
+│
+├── Customer Segmentation.ipynb    # Jupyter Notebook for the tutorial
+├── Mall_Customers.csv             # Dataset file
+├── requirements.txt               # List of dependencies
+├── LICENSE                        # License information
+├── README.md                      # Documentation
+└── results/                       # Directory for storing visualizations and outputs
+```
 
 ---
 
@@ -113,7 +138,14 @@ Since this is an **unsupervised learning** task, there is no explicit target var
 
 ---
 
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
 ## Author
 
 This project was created to demonstrate the power of clustering in customer segmentation and its applications in real-world business scenarios.
-```
+
+--- 
