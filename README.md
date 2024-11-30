@@ -87,7 +87,7 @@ Since this is an **unsupervised learning** task, there is no explicit target var
 ### Step 1: Clone the Repository
 Clone the repository to your local machine:
 ```bash
-git clone <repository-url>
+git clone https://github.com/sab110/Customer-Segmentation-Clustering.git
 cd Customer-Segmentation-Clustering
 
 ```
