@@ -1,4 +1,3 @@
-```markdown
 # Customer Segmentation Using K-Means Clustering
 
 ## Overview
